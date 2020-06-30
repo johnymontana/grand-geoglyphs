@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
 
-import UserList from './components/UserList'
+import MapSearch from './components/MapSearch'
 
 import clsx from 'clsx'
 import { makeStyles } from '@material-ui/core/styles'
@@ -29,7 +29,6 @@ import {
   Dashboard as DashboardIcon,
   People as PeopleIcon,
 } from '@material-ui/icons'
-import Dashboard from './components/Dashboard'
 
 function Copyright() {
   return (
@@ -135,7 +134,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function App() {
   const classes = useStyles()
-  const [open, setOpen] = React.useState(true)
+  const [open, setOpen] = React.useState(false)
   const handleDrawerOpen = () => {
     setOpen(true)
   }
@@ -218,9 +217,7 @@ export default function App() {
           <div className={classes.appBarSpacer} />
           <Container maxWidth="lg" className={classes.container}>
             <Switch>
-              <Route exact path="/" component={Dashboard} />
-              <Route exact path="/businesses" component={UserList} />
-              <Route exact path="/users" component={UserList} />
+              <Route exact path="/" component={MapSearch} />
             </Switch>
 
             <Box pt={4}>

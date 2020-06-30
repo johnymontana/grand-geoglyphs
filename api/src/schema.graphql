@@ -1,64 +1,32 @@
-type User {
-  userId: ID!
-  name: String
-  reviews: [Review] @relation(name: "WROTE", direction: "OUT")
-  avgStars: Float
-    @cypher(
-      statement: "MATCH (this)-[:WROTE]->(r:Review) RETURN toFloat(avg(r.stars))"
-    )
-  numReviews: Int
-    @cypher(statement: "MATCH (this)-[:WROTE]->(r:Review) RETURN COUNT(r)")
-  recommendations(first: Int = 3): [Business]
-    @cypher(
-      statement: "MATCH (this)-[:WROTE]->(r:Review)-[:REVIEWS]->(:Business)<-[:REVIEWS]-(:Review)<-[:WROTE]-(:User)-[:WROTE]->(:Review)-[:REVIEWS]->(rec:Business) WHERE NOT EXISTS( (this)-[:WROTE]->(:Review)-[:REVIEWS]->(rec) ) WITH rec, COUNT(*) AS num ORDER BY num DESC LIMIT $first RETURN rec"
-    )
-}
-
-type Business {
-  businessId: ID!
+type Town {
+  _id: Long!
   name: String!
-  address: String
-  city: String
-  state: String
-  location: Point
-  avgStars: Float
-    @cypher(
-      statement: "MATCH (this)<-[:REVIEWS]-(r:Review) RETURN coalesce(avg(r.stars),0.0)"
-    )
-  reviews: [Review] @relation(name: "REVIEWS", direction: "IN")
-  categories: [Category] @relation(name: "IN_CATEGORY", direction: "OUT")
+  in_state: [State] @relation(name: "IN_STATE", direction: "OUT")
+  geoglyphs: [Geoglyph] @relation(name: "IN_TOWN", direction: "IN")
 }
 
-type Review {
-  reviewId: ID!
-  stars: Float
-  text: String
-  date: Date
-  business: Business @relation(name: "REVIEWS", direction: "OUT")
-  user: User @relation(name: "WROTE", direction: "IN")
+type Monogram {
+  _id: Long!
+  name: String!
+  geoglyphs: [Geoglyph] @relation(name: "HAS_MONOGRAM", direction: "IN")
 }
 
-type Category {
-  name: ID!
-  businesses: [Business] @relation(name: "IN_CATEGORY", direction: "IN")
+type Photo {
+  url: String
+  requestURL: String
 }
 
-type RatingCount {
-  stars: Float!
-  count: Int!
+type Geoglyph {
+  _id: Long!
+  description: String
+  location: Point!
+  has_monogram: [Monogram] @relation(name: "HAS_MONOGRAM", direction: "OUT")
+  in_town: [Town] @relation(name: "IN_TOWN", direction: "OUT")
+  photos(first: Int = 10, radius: Int = 5000): [Photo] @neo4j_ignore
 }
 
-type Mutation {
-  mergeBusinessCategory(categories: [String!]!, businessId: ID!): Business
-    @cypher(
-      statement: "MATCH (b:Business {businessId: $businessId}) UNWIND $categories AS cat MERGE (c:Category {name: cat}) MERGE (b)-[:IN_CATEGORY]->(c) RETURN b"
-    )
-}
-
-type Query {
-  userCount: Int! @cypher(statement: "MATCH (u:User) RETURN COUNT(u)")
-  ratingsCount: [RatingCount]
-    @cypher(
-      statement: "MATCH (r:Review) WITH r.stars AS stars, COUNT(*) AS count ORDER BY stars RETURN {stars: stars, count: count}"
-    )
+type State {
+  _id: Long!
+  name: String!
+  towns: [Town] @relation(name: "IN_STATE", direction: "IN")
 }
