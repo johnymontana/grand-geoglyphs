@@ -3,40 +3,30 @@ import { useTheme } from '@material-ui/core/styles'
 import { Grid, Paper } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
-import MapGL, { Popup } from '@urbica/react-map-gl'
+import MapGL, { Popup, Marker } from '@urbica/react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
-import gql from 'graphql-tag'
-import { useQuery } from '@apollo/react-hooks'
 
 import PhotoList from './PhotoList'
 
-const GET_GLYPHS_QUERY = gql`
-  {
-    Geoglyph(first: 10, filter: { in_town: { name: "Missoula" } }) {
-      description
-      location {
-        longitude
-        latitude
-      }
-      has_monogram {
-        name
-      }
-      in_town {
-        name
-      }
-      photos(first: 10, radius: 200) {
-        url
-      }
-    }
+export default function MapSearch(props) {
+  const style = {
+    paddingLeft: '4px',
+    paddingRight: '4px',
+    color: '#fff',
+    cursor: 'pointer',
+    background: '#1978c8',
+    borderRadius: '50%',
+    fontSize: '8px',
   }
-`
 
-export default function MapSearch() {
+  console.log(props)
   const theme = useTheme()
   const [viewport, setViewport] = useState({
     zoom: 11,
   })
 
+  const [currentGlyph, setCurrentGlyph] = useState(props.glyphs[0])
+  const [showDetails, setShowDetails] = useState(true)
   const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
@@ -54,10 +44,6 @@ export default function MapSearch() {
   const classes = useStyles(theme)
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight)
 
-  const { loading, error, data } = useQuery(GET_GLYPHS_QUERY)
-  if (error) return <p>Error</p>
-  if (loading) return <p>Loading</p>
-
   return (
     <React.Fragment>
       <Grid container spacing={4}>
@@ -68,28 +54,34 @@ export default function MapSearch() {
               style={{ width: '100%', height: '100%' }}
               mapStyle="mapbox://styles/mapbox/light-v9"
               accessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-              latitude={data.Geoglyph[1].location.latitude}
-              longitude={data.Geoglyph[1].location.longitude}
+              latitude={currentGlyph.location.latitude}
+              longitude={currentGlyph.location.longitude}
               zoom={viewport.zoom}
               onViewportChange={setViewport}
             >
-              <Popup
-                longitude={data.Geoglyph[1].location.longitude}
-                latitude={data.Geoglyph[1].location.latitude}
-                closeButton={true}
-                closeOnClick={true}
-              >
-                <div>
-                  <p>{data.Geoglyph[1].description}</p>
-                </div>
-              </Popup>
+              {/* TODO: map over data.Glyph and add a marker for each
+                  then a single popup
+             */}
+              {props.glyphs.map((g, i) => {
+                return (
+                  <Marker
+                    key={i}
+                    longitude={g.location.longitude}
+                    latitude={g.location.latitude}
+                  >
+                    <div style={style} onClick={() => setCurrentGlyph(g)}>
+                      {g.has_monogram[0].name.substring(0, 1)}
+                    </div>
+                  </Marker>
+                )
+              })}
             </MapGL>
           </Paper>
         </Grid>
         {/* User Count */}
         <Grid item xs={12} md={4} lg={5}>
           <Paper className={fixedHeightPaper}>
-            <PhotoList />
+            <PhotoList glyph={currentGlyph} />
           </Paper>
         </Grid>
         {/* Recent Reviews */}

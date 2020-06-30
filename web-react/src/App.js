@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
 
-import MapSearch from './components/MapSearch'
+import Search from './components/Search'
 
 import clsx from 'clsx'
 import { makeStyles } from '@material-ui/core/styles'
@@ -217,7 +217,7 @@ export default function App() {
           <div className={classes.appBarSpacer} />
           <Container maxWidth="lg" className={classes.container}>
             <Switch>
-              <Route exact path="/" component={MapSearch} />
+              <Route exact path="/" component={Search} />
             </Switch>
 
             <Box pt={4}>

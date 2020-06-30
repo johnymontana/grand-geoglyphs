@@ -1,6 +1,8 @@
 # Import
 
-1. Scrape Wikipedia pages
+1. Scrape Wikipedia pages - see `ScrapeGeoglyph.ipynb`
+
+2. Import into Neo4j
 
 Import with Cypher
 

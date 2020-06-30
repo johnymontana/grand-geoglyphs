@@ -1,0 +1,82 @@
+monogram,town,description,lat,lon,state
+A,Agoura Hills,,34.1538, -118.7499,California
+S,Morgan Hill,Ann Sobrato High School,37.1457, -121.6814,California
+A,Azusa,,34.1551, -117.8919,California
+B,Banner,,33.0694, -116.5441,California
+B,Bard,,32.8373, -114.5287,California
+B,Barstow,,34.9008, -117.0333,California
+B,Boron,,35.0145, -117.6605,California
+B,Burbank,,34.2016, -118.2959,California
+B,Yucca Valley,Burnt Mountain,34.1054, -116.4131,California
+B,Ridgecrest,Burroughs High School,35.6554, -117.6127,California
+CLU,Thousand Oaks,California Lutheran University,34.2333, -118.8797,California
+CPP,Pomona,Cal Poly Pomona,34.0595, -117.8269,California
+CALICO,Calico,,34.955, -116.8635,California
+C,Daggett,Calico High School,34.8736, -116.8949,California
+P,San Luis Obispo,California Polytechnic State University,35.3028, -120.6518,California
+[Eagle],San Luis Obispo,Camp San Luis Obispo (Nat. Guard Base),35.3309, -120.7208,California
+C,San Juan Capistrano,Capistrano High School,33.5093, -117.6762,California
+C,Coalinga,,36.1366, -120.4073,California
+C,Coleville,,38.5726, -119.515,California
+DV,Shoshone,Death Valley,35.9809, -116.276,California
+D,Dinuba,Dinuba High School,36.5819, -119.3465,California
+d,Duarte,,34.1546, -117.95,California
+EC,Lakeside,El Capitan High School,32.8678, -116.9265,California
+E,Escondido,,33.165, -117.102,California
+F,Fillmore,,34.4091, -118.893,California
+GOLDSTONE,Fort Irwin,Goldstone Observatory,35.3028, -116.8062,California
+G,El Cajon,Grossmont High School,32.78, -116.9864,California
+H,Glendale,Hoover High School,34.1789, -118.2562,California
+H,Hornbrook,,41.9111, -122.5462,California
+K,Kelseyville,,38.9835, -122.7958,California
+L,Laguna Beach,Laguna Beach High School,33.5450, -117.7744,California
+L,Susanville,Lassen High School,40.4465, -120.6528,California
+L,Laytonville,,39.6965, -123.4656,California
+LV,Lee Vining,,37.9553, -119.1259,California
+L,Lemon Cove,,36.3878, -119.0094,California
+L,Lindsay,,36.2173, -119.0516,California
+L¹⁶P,Lone Pine,,36.6027, -118.0875,California
+LA,Hacienda Heights,Los Altos High School,34.0184, -117.9962,California
+L,Loyalton,,39.6936, -120.2056,California
+LMU,Los Angeles,Loyola Marymount University,33.9725, -118.4182,California
+L,Ludlow,,34.7186, -116.1747,California
+M,Maricopa,,35.0361, -119.412,California
+M,San Luis Obispo,Mission Preparatory Academy,35.2824, -120.6747,California
+M,Monrovia,,34.1582, -118.0145,California
+M,Moreno Valley,,33.9597, -117.2789,California
+MB,Morro Bay,,35.3772, -120.8502,California
+MSAC,Walnut,Mount San Antonio College,34.0413, -117.8423,California
+NILES,Fremont,neighborhood,37.5828, -121.9732,California
+O,Oroville,,39.5472, -121.5509,California
+P,San Bernardino,Pacific High School,34.1334, -117.2652,California
+P,San Marcos,Palomar College,33.1557, -117.173,California
+P,Porterville,,36.0285, -118.9649,California
+P,Portola,,39.805, -120.4453,California
+Q,Quincy,,39.9386, -120.9335,California
+R,Randsburg,,35.3689, -117.6476,California
+R,Reedley,,36.6913, -119.4249,California
+S,San Jacinto,,33.8204, -116.9397,California
+SL,San Luis Obispo,San Luis Obispo High School,35.2834, -120.6463,California
+S,Sanger,,36.6945, -119.426,California
+SP,Santa Paula,,34.326, -119.0423,California
+S,Santa Clarita,Saugus High School,34.4416, -118.5209,California
+S,Seville,,36.5137, -119.2121,California
+S,Shandon,,35.6661, -120.3826,California
+SOUTH SAN FRANCISCO THE INDUSTRIAL CITY,South San Francisco,,37.6634, -122.4181,California
+SMC,Moraga,St. Mary's College,37.8375, -122.1102,California
+SV,Yermo,Silver Valley High School,34.8959, -116.8945,California
+T,Tehachapi,,35.1348, -118.4179,California
+T,Templeton,,35.5462, -120.7132,California
+T,Trona,,35.7847, -117.3953,California
+C,Berkeley,"University of California, Berkeley",37.8746, -122.2496,California
+C,Riverside,"University of California, Riverside",33.9713, -117.3022,California
+R,Redlands,University of Redlands,34.1834, -117.105,California
+U,Ukiah,,39.1519, -123.2390,California
+V,Ventura,,34.2864, -119.2672,California
+VC,Ventura,Ventura College,34.2861, -119.2357,California
+V,Victorville,,34.5316, -117.2935,California
+W,Weed,,41.4433, -122.3864,California
+W,Whittier,,33.978, -118.0238,California
+W,Willits,,39.4453, -123.3028,California
+W,Woodlake,,36.4321, -119.0758,California
+Y,Yucaipa,,34.0412, -117.0882,California

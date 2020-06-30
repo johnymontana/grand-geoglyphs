@@ -1,7 +1,38 @@
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://grandstack.io/deploy-starter-netlify) [![Deploy to Vercel](https://vercel.com/button)](https://grandstack.io/deploy-starter-vercel) [![Provision Neo4j](https://grandstack.io/img/provision-neo4j.png)](https://sandbox.neo4j.com/?usecase=blank-sandbox)
 
+# GRAND Geoglyphs
 
-# GRANDstack Starter
+![](img/screenshot.png)
+
+This is a GRANDstack (GraphQL, React, Apollo, Neo4j Database) application for analyzing and visualizing Geoglyphs - specifically hillside letters or "mountain monograms".
+
+**Data Import**
+
+See [`/data`](data/) for scraping data from Wikipedia and importing into Neo4j.
+
+![](img/wikipedia.png)
+
+![](img/graph.png)
+
+The graph data model includes `Geoglyph`, `Monogram`, `Town`, and `State` nodes
+
+![](img/datamodel.png)
+
+**GraphQL API**
+
+![](img/graphql.png)
+
+See [`/api`](api/) for the GraphQL API to expose this data once loaded into Neo4j. It also includes stitching in the Mapillary API for finding crowdsourced photos of each geoglyph.
+
+You will need a valid Mapillary Key. Add it to `api/.env` under `MAPILLARY_KEY`
+
+**React App**
+
+A React application using Material UI and Mapbox GL JS is used to visualize the results.
+
+See [`web-react`](web-react) for the frontend application.
+
+## Bootstrapped from `create-grandstack-app`:
 
 ```
 npx create-grandstack-app myNewApp
@@ -169,7 +200,6 @@ If you want to load the example DB after the services have been started:
 ```
 docker-compose run api npm run seedDb
 ```
-
 
 You can find instructions for other ways to use Neo4j (Neo4j Desktop, Neo4j Aura, and other cloud services) in the [Neo4j directory README.](./neo4j)
 

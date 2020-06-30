@@ -1,0 +1,98 @@
+monogram,town,description,lat,lon,method,state
+Fish,Livingston,"""Trout capital of the world""",45.6708, -110.5641,,Montana
+A,Absarokee,,45.5172, -109.4376,,Montana
+A,Anaconda,,46.1174, -112.9706,,Montana
+A,Arlee,,47.156506, -114.094879,,Montana
+B (uncertain existence),Baker,,46.3651, -104.2741,,Montana
+B,Dillon,Beaverhead County High School,45.2389, -112.6676,,Montana
+B,Bozeman,,45.7241, -110.9825,,Montana
+B,Bridger,,45.295342, -108.928286,,Montana
+B,Broadus,,45.4479, -105.4107,,Montana
+C (poor maintenance),Helena,Carroll College,46.5704, -112.0299,,Montana
+C,Ekalaka,Carter County High School,45.8973, -104.5453,,Montana
+C,Cascade,,47.2815, -111.7103,,Montana
+C,Anaconda,Anaconda High School,46.114, -112.9512,,Montana
+C,Charlo,,47.4502, -114.256,,Montana
+C,Circle,,47.4255, -105.5889,,Montana
+C (uncertain existence),Colstrip,,45.885, -106.6331,,Montana
+C,Columbus,,45.6521, -109.2505,,Montana
+C,Corvallis,,46.3359, -114.0261,,Montana
+CMR,Great Falls,C.M. Russell High School,47.492892, -111.348718,,Montana
+D,Darby,Darby High School,46.0248, -114.1649,,Montana
+D (uncertain existence),Glendive,Dawson County High School,47.1123, -104.7066,,Montana
+D,Denton,,47.3124, -109.9366,,Montana
+D,Drummond,,46.6701, -113.1407,,Montana
+E,Ennis,,45.3505, -111.7478,,Montana
+F,Lewistown,Fergus High School,47.0541, -109.4230,,Montana
+F,Kalispell,Flathead High School,48.1793, -114.3816,,Montana
+F,Forsyth,,46.2613, -106.674,,Montana
+F (no longer exists),Frazer,,48.0601, -106.0398,,Montana
+F,Frenchtown,,47.0218, -114.2212,,Montana
+F (uncertain existence),Fromberg,,45.3886, -108.9209,,Montana
+FB,Ft. Benton,,47.8101, -110.6626,,Montana
+G,Gardiner,,45.038, -110.7062,,Montana
+G,Geraldine,,47.6057, -110.287,,Montana
+G,Geyser,,47.2861, -110.5089,,Montana
+G,Glasgow,,48.2118, -106.6395,,Montana
+G,Philipsburg,Granite High School,46.3306, -113.283,,Montana
+GR,Grass Range,,47.027, -108.8087,,Montana
+GF,Great Falls,Great Falls High School,47.5218, -111.3353,,Montana
+H,Hamilton,,46.2342, -114.2315,,Montana
+H,Harlowton,,46.4445, -109.8154,,Montana
+H,Havre,Havre High School,48.5232, -109.6386,,Montana
+H,Havre,Havre High School,48.546896, -109.687308,,Montana
+H,Helena,,46.590876, -112.059953,,Montana
+H (no longer exists),Missoula,Hellgate High School,46.8624, -113.9966,,Montana
+H,Highwood,,47.5801, -110.7935,,Montana
+H,Hinsdale,,48.3778, -107.0964,,Montana
+H,Hot Springs,,47.6263, -114.651,,Montana
+H,Hysham,,46.2624, -107.2249,,Montana
+J,Jackson,,45.3805, -113.3982,,Montana
+J,Boulder,Jefferson High School,46.2448, -112.1486,,Montana
+J,Joliet,,45.4808, -108.9598,,Montana
+J,Jordan,,47.3151, -106.8984,,Montana
+K,Klein,,46.4006, -108.5512,,Montana
+KG (uncertain existence),Gildford,Kremlin-Gildford High School (closed),48.5698, -110.3,,Montana
+L,Lavina,,46.3114, -108.9335,,Montana
+L (no longer exists),Lewistown,,45.67, -110.5621,,Montana
+L,Libby,,48.3943, -115.5087,,Montana
+L,Lima,,44.6185, -112.5784,,Montana
+L,Eureka,Lincoln County High School,48.8842, -115.0561,,Montana
+L,Missoula,Loyola High School,46.8728, -113.9685,,Montana
+M (uncertain existence),Malta,,48.3549, -107.8701,,Montana
+M,St. Ignatius,Mission High School,47.3007, -114.1066,,Montana
+M,Bozeman,Montana State University,45.7144, -110.9735,,Montana
+M,Butte,"Montana Tech, built 1910",46.0191, -112.5587,,Montana
+M,Missoula,"University of Montana, built 1909",46.8594, -113.9757,,Montana
+M,Dillon,University of Montana Western,45.2209, -112.6671,,Montana
+N,Nashua,,48.1381675, -106.3566111,,Montana
+N,Havre,Montana State University Northern,48.546977, -109.686583,,Montana
+P,Livingston,Park High School,45.6714, -110.5624,,Montana
+P,Plains,,47.4619, -114.872,,Montana
+P,Polson,,47.6798, -114.1471,,Montana
+P,Deer Lodge,Powell County High School,46.4222, -112.7599,,Montana
+RL,Red Lodge,,45.1766, -109.2425,,Montana
+R,Redstone,,48.8237, -104.9505,,Montana
+R,Reed Point,,45.7026, -109.5424,,Montana
+R,Roberts,,45.3764, -109.1864,,Montana
+R (no longer exists),Billings,Rocky Mountain College,45.8023, -108.5547,,Montana
+R,Rosebud,,46.273, -106.4372,,Montana
+R (uncertain existence),Roundup,,46.4381, -108.5376,,Montana
+R,Roy,,47.3227, -108.9527,,Montana
+R,Ryegate,,46.3023, -109.2568,,Montana
+S (no longer exists),Missoula,Sentinel High School,46.847, -114.0099,,Montana
+S,Shelby,,48.5195, -111.8671,,Montana
+S,Sheridan,Sheridan K-12 Schools,45.4514, -112.1251,,Montana
+R (uncertain existence),Saint Regis,,47.3064, -115.1053,,Montana
+S,Stanford,,47.1655, -110.2724,,Montana
+S,Superior,,47.1955, -114.8791,,Montana
+T,Terry,,46.81058, -105.3153,,Montana
+T,Three Forks,,45.8864, -111.6501,,Montana
+TB,Twin Bridges,,45.5653, -112.3127,,Montana
+U,Ulm,,47.4387, -111.4999,,Montana
+V,Victor,,46.4396, -114.1992,,Montana
+W,Whitehall,,45.910345, -112.037352,,Montana
+W (uncertain existence),Wibaux,,46.9878, -104.1877,,Montana
+W,Windham,,47.084, -110.139,,Montana
+W,Winifred,,47.5651, -109.3685,,Montana
+W,Winnett,,46.992, -108.3458,,Montana
